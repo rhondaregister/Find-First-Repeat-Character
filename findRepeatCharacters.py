@@ -4,6 +4,9 @@ def findRepeatCharacters(string):
         if c in d:
             return 'The first repeating letter is "{}"'.format(c)
             break
+        elif c == ' ':
+            print('...Skipping empty space.')
+            continue
         else:
             cl = set(k.lower() for k in d)
             d[c] = c
@@ -14,4 +17,4 @@ def findRepeatCharacters(string):
     return('No repeat characters found!')
     
 
-print(findRepeatCharacters("Umlaut"))
+print(findRepeatCharacters("Naughty By Nature"))
