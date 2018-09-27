@@ -5,7 +5,10 @@ def findRepeatCharacters(string):
             return 'The first repeating letter is "{}"'.format(c)
             break
         elif c == ' ':
-            print('...Skipping empty space.')
+            print('...Skipping space.')
+            continue
+        elif c == '\n':
+            print('...Skipping linebreak.')
             continue
         else:
             cl = set(k.lower() for k in d)
@@ -17,4 +20,4 @@ def findRepeatCharacters(string):
     return('No repeat characters found!')
     
 
-print(findRepeatCharacters("Naughty By Nature"))
+print(findRepeatCharacters("Naughty \n By \n Nature"))
