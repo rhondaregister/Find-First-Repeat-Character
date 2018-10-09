@@ -18,6 +18,3 @@ def findFirstRepeatCharacter(string):
                 print('...FYI, capital and lowercase letters are considered unique characters around here.')
             continue
     return('No repeat characters found!')
-    
-
-print(findFirstRepeatCharacter("Naughty\n nature"))
